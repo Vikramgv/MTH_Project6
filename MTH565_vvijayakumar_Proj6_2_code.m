@@ -81,7 +81,6 @@ log_y = log(large_degrees(:, 2));
 coeffs = polyfit(log_x, log_y, 1);
 slope = coeffs(1);
 intercept = coeffs(2);
-fprintf('Power-law fit for Gp(t): y = %.4f * x^(%.4f)\n', exp(intercept), slope);
 
 % Plot the power-law fit
 figure;
